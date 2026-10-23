@@ -2,11 +2,19 @@
 
 Runs locally with repository checkouts and persistent memory, using MCP for external integrations.
 
-Five skills: **interview-me**, **coding**, **code review**, **planning**, and **support**.
+## Skills
+
+| Skill | Trigger | What it does |
+| --- | --- | --- |
+| **INTERVIEW-ME** | Vague request, "interview me" | Clarifies intent before plan/code |
+| **REVIEW** | "review this commit", review request | Review changes against requirements |
+| **PLANNING** | "plan this", large multi-file task | Ordered task list with acceptance criteria |
+| **SUPPORT** | Tool question, error report, pasted logs | README-first answers, version checks, Jira/Git searches |
+| **CODING** | Everything else | Implement, debug, test, update docs |
 
 ## Why These Features
 
-- **Local clones:** Avoid repeated MCP source reads, network latency, and token-heavy responses. Reuse checkouts and indexes; remove disposable clones when unused, keeping maps and learnings.
+- **On-demand Local clones:** Avoid repeated MCP source reads, network latency, and token-heavy responses. Reuse checkouts and indexes; remove disposable clones when unused, keeping maps and learnings.
 - **Project map:** Quickly locate entry points, modules, and dependencies.
 - **Index and memory:** Find code and reuse past decisions. Current source remains authoritative.
 - **Security gate:** Require authorization for restricted local and MCP actions.
@@ -171,18 +179,6 @@ flowchart TD
         ST["memory.py stale [days]"] --> MDB
     end
 ```
-
-
-## Skills
-
-| Skill | Trigger | What it does |
-| --- | --- | --- |
-| **INTERVIEW-ME** | Vague request, "interview me" | Clarifies intent before plan/code |
-| **REVIEW** | "review this commit", review request | Review changes against requirements |
-| **PLANNING** | "plan this", large multi-file task | Ordered task list with acceptance criteria |
-| **SUPPORT** | Tool question, error report, pasted logs | README-first answers, version checks, Jira/Git searches |
-| **CODING** | Everything else | Implement, debug, test, update docs |
-
 
 ## Shared Infrastructure
 
